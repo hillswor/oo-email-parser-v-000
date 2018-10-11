@@ -7,5 +7,15 @@ require "pry"
 
 class EmailParser
 
+  attr_accessor :emails
+
+  def initialize(emails)
+    @emails =  emails
+  end
+
+  def parse
+    split_email = emails.split.collect {|address| address}
+  end
+
 
 end
