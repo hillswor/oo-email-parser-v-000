@@ -16,6 +16,6 @@ class EmailParser
   def parse
     split_email = emails.split.collect {|address| address}
   end
-binding.pry
 
 end
+binding.pry
